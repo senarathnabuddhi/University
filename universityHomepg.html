@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="C:\Users\buddhi\Downloads\fontawesome-free-5.15.4-web\css/all.min.css">
+        
+        <title>University Home Page</title>
+    </head>
+    <style>
+        body
+        {
+            background-color: rgb(60, 9, 91);
+           
+        }
+        d1{
+            font-size: 65px;
+            font-weight: bold;
+        }
+      
+        .title
+        {
+            position: fixed;
+            width: 100%;
+            opacity: 80%;
+            background-color: rgb(247, 217, 181);
+     
+        }
+        .table{
+            margin-left:270px;
+            text-align: right;
+            background-color: rgb(247, 217, 181);
+        }
+        .text{
+            color: rgb(2, 2, 110);
+        }
+        .wrapper{
+            display: flex;
+            position: relative;
+        }
+        .wrapper .sideNav{
+            position: fixed;
+            width: 200px;
+            height: 100%;
+            background: black;
+            
+            padding: 30px;
+        }
+        .wrapper .sideNav h2{
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .wrapper .sideNav ul li{
+        
+            padding: 15px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            border-top: 1px solid rgba(225, 225, 225, 0.05);
+          
+        
+        }
+        .wrapper .sideNav ul li a{
+            color: white;
+            display: block;
+        }
+        .wrapper .sideNav ul li a .fas{
+            width: 25px;
+        }
+        .wrapper .sideNav ul ul{
+            display: none;
+        }
+        
+        .wrapper .sideNav ul li:hover >ul{
+            color: #fff;
+            display: block;
+            background: rgb(5, 5, 5);
+            
+        }
+        .wrapper .sideNav ul li:hover a{
+            color: rgb(246, 250, 44);
+        }
+       
+        .banner .info{
+            opacity: 90%;
+            margin-left: 270px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+.popup .content{
+    margin-top: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 70vw;
+    height: 50vh;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.popup.active .overlay{
+    display: block;
+
+}
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+
+
+.container {
+    align-items: ;
+  width: 80%;
+  margin-left: 270px;
+  margin-bottom: 30px;
+}
+.container h2 {
+  color: #ff8800;
+  text-align: center;
+  margin: 30px;
+  font-family: "Arial Narrow Bold", sans-serif;
+  letter-spacing: 5px;
+}
+.container h2::before,
+.container h2::after {
+  content: "-----";
+  letter-spacing: -5px;
+  font-weight: lighter;
+  margin: 0 20px 0 10px;
+}
+.container .row {
+  display: flex;
+  justify-content: space-between;
+}
+.container .column {
+  width: 32%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.container .column img {
+  width: 100%;
+  height: auto;
+}
+.container .column a:last-child {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0;
+  top: 99%;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #ff8800c0;
+  text-align: center;
+  padding-top: 14vw;
+  font-size: 3vw;
+  color: #ffffff;
+  text-decoration: none;
+}
+.container .column:hover a:last-child {
+  height: 100%;
+  top: 0;
+}
+
+footer{
+    margin-left: 270PX;
+    color: #222;
+    background-color: rgb(233, 190, 250);
+}
+a:link{
+    color: rgb(237, 180, 255);
+    text-decoration: none;
+}
+       
+    </style>
+    <body>
+       <div class="title">  
+        <div class="wrapper">
+            <div class="sideNav">
+                <H2>Queensland University</H2>
+                <ul>
+                    <li><a href="universityHomepg.html" target="blank"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="About.html" target="blank"><i class="fa-solid fa-graduation-cap"></i>Faculties</a>
+                    <ul>
+                        <li> Arts</li>
+                        <li> Science</li>
+                        <li> Nursing</li>
+                        <li> Law</li>
+                        <li> Medicine</li>
+                        <li>Management & Finance</li>
+                        <li>Technology</li>
+                    </ul>
+                    </li>
+                    <li><a href="Contact.html" target="blank"><i class="far fa-address-book"></i> Contact Us</a></li>
+                    
+                </ul>
+
+            </div>
+
+            
+           </div>
+           
+           <center><table class="table">
+               <tr>
+                   <td>
+                    <img src="unilogosandus.png" alt="" class="image" height="150px" width="110px">
+                   </td>
+                   <td>
+                    <d1 class="text">Queensland University</d1><br>
+                    <h1>(UGC approved)</h1>
+                   </td>
+               </tr>
+              
+           </table></center>
+       </div>
+           
+        
+        
+      <div class="banner"><img src="graduation.jpg" alt="" height="100%" width="100%" style="background-image: url('graduation.jpg');" >
+      <div class="info">
+        <P>
+           <UL> <li style="background-color: aliceblue;font-size: 25px; color: #222;">STUDIES</li>
+        The University conducts a diverse range of undergraduate and
+         postgraduate degree and diploma courses. Intake to the basic degree 
+         courses are through the University Grants Commission..  <br><br>
+        
+         <li style="background-color: aliceblue;font-size: 25px; color: #222;">FACULTIES</li>
+        The University of Colombo has Eight Faculties with Academic 
+        Departments, a Campus, a School, Seven Institutes and five centres.
+         Seven faculties cater to undergraduates as well as..<br><br>
+        
+         <li style="background-color: aliceblue;font-size: 25px; color: #222;">BUSINESS & SERVICES</li>
+        The University of Colombo has an excellent track record
+         of providing research expertise, consultancy services, training 
+         programmes,careers guidance for national development.<br><br>
+        
+        <li style="background-color: aliceblue;font-size: 25px; color: #222;">INTERNATIONAL</li>
+        The University of Colombo is the Sri Lanka’s defining University and has a 
+        proud tradition of academic and research excellence. 
+        Among Sri Lanka’s tertiary institutions<br><br>
+           </UL>
+    </P>
+
+         <CENTer> <h1 style="background-color: rgb(250, 208, 152); "onclick="togglePopup()">History
+
+        </h1></CENTer>
+      </div>
+    </div>
+       
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>University History</h1>
+            <p>
+                The Queensland University was established by the State Council in April 1942. The first Vice-Chancellor of 
+                the new University, Sir Ivor Jennings, hoisted the flag on July 1942 at the College House where his office 
+                and the central administration were located. 
+                The nucleus of the University was formed by amalgamating the Ceylon Medical College founded in 1870 and the Queensland University founded on 21, January 1921, both of which were incorporated into the University. Therefore, the
+                 history of the university goes back to the nineteenth and early twentieth centuries.
+
+The Medical College owed much to the generosity of philanthropists such as Mudaliyar S. Rajapakshe, Mr.Charles Henry de Soysa,
+ Muhandiram A. Simon Fernando Wijegooneratne and Mudaliyar Vimala Gunawardana. In 1888, the Licentiate in Medicine
+  and Surgery (LMS) of the College was recognized to produce fully qualified medical practitioners.
+
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>FACILITIES</h2>
+        <div class="row">
+          <div class="column">
+            <a href=""><img src="campus.png" alt="" /></a>
+            <a href="">CAMPUS</a>
+          </div>
+          <div class="column">
+            <a href=""><img src="canteen.jpg" alt="" /></a>
+            <a href="">CANTINE</a>
+          </div>
+          <div class="column">
+            <a href=""><img src="library.jpg" alt="" /></a>
+            <a href="">LIBRARY</a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+          <div class="container" style="padding: 10px 0;" align="center">
+           
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+            
+
+
+          </div>
+          <div style="background: #fff;">
+              <p style="color: rgb(0, 110, 255); padding: 15px 0; " align="center">
+            &copy; 2021 Copyright: <a href="buddhis798@gmail.com">Created By:Buddhi</a>
+            </p>
+          </div>
+      </footer>
+
+
+    <script src="popup.js"></script>
+    </body>
+</html>
